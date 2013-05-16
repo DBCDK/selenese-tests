@@ -4,71 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://dringo.dbc.dk/" />
-<title>activate</title>
+<title>SletBruger</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">activate</td></tr>
+<tr><td rowspan="1" colspan="3">SletBruger</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>http://guesstimate.dbc.dk/~hhl/BibliotekDkSelenium/getActivationLink.php</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=mail_to</td>
-	<td>hhl@guesstimate.dbc.dk</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>name=checkformail</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTitle</td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>name=activate</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTextPresent</td>
-	<td>Klik på Log ind for at logge ind på bibliotek.dk og vælge et kodeord.</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>id=edit-submit</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForTextPresent</td>
-	<td>Du har nu brugt dit en-gangs-login og kan ikke længere logge ind med dette link. Opret et nyt kodeord her.</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=edit-pass-pass1</td>
-	<td>${userpass1}</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=edit-pass-pass2</td>
-	<td>${userpass1}</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>id=edit-submit</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>css=img[alt=&quot;Bibliotek.dk - loan of books, music, and films&quot;]</td>
+	<td>http://dringo.dbc.dk/content/da</td>
 	<td></td>
 </tr>
 <tr>
@@ -77,13 +22,28 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
-	<td>link=Log ud</td>
-	<td>Log ud</td>
+	<td>clickAndWait</td>
+	<td>link=Log ind</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Bibliotek.dk login | bibliotek.dk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-name</td>
+	<td>${userid1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-pass</td>
+	<td>${userpass1}</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Log ud</td>
+	<td>id=edit-submit</td>
 	<td></td>
 </tr>
 <tr>
@@ -91,6 +51,52 @@
 	<td>Information | bibliotek.dk</td>
 	<td></td>
 </tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Min side</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Min side | bibliotek.dk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-bibdk-mypage-link-profile2-tab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>hhl@guesstimate.dbc.dk | bibliotek.dk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>exact:Er du sikker på du vil slette dit login? | bibliotek.dk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Information | bibliotek.dk</td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+
 </tbody></table>
 </body>
 </html>
