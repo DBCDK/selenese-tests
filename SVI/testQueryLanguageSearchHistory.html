@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost/bibdk/" />
+<title>testQueryLanguageSearchHistory</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">testQueryLanguageSearchHistory</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${baseurl}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-search-block-form--2</td>
+	<td>hest</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-search-block-form--2</td>
+	<td>fisk</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Min side</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Mine søgninger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>hest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>fisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-and-or-radios-og-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-bibdk-search-history-table-hest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-bibdk-search-history-table-fisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-combine</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=edit-search-block-form--2</td>
+	<td>(hest OG fisk)</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Min side</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Mine søgninger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-and-or-radios-eller-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-bibdk-search-history-table-hest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-bibdk-search-history-table-fisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-combine</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=edit-search-block-form--2</td>
+	<td>(hest ELLER fisk)</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=English</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Mine søgninger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-bibdk-search-history-table-hest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-bibdk-search-history-table-fisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-and-or-radios-and-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-combine</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=edit-search-block-form--2</td>
+	<td>(hest AND fisk)</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Mine søgninger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-bibdk-search-history-table-hest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-bibdk-search-history-table-fisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-and-or-radios-or-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-combine</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=edit-search-block-form--2</td>
+	<td>(hest OR fisk)</td>
+</tr>
+</tbody></table>
+</body>
+</html>
