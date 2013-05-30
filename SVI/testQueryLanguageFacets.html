@@ -27,13 +27,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>storeText</td>
+	<td>//div[3]//a/span</td>
+	<td>numberOfResultsString</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{storedVars.numberOfResultsString.replace('(','').replace(')','')}</td>
+	<td>numberOfResults</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
-	<td>link=bog (1528)</td>
+	<td>//div[3]//a</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>1528 (1528) poster</td>
+	<td>(${numberOfResults}) poster</td>
 	<td></td>
 </tr>
 <tr>
@@ -58,12 +68,12 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=book (1528)</td>
+	<td>//div[3]//a</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>1528 (1528) records</td>
+	<td>(${numberOfResults}) records</td>
 	<td></td>
 </tr>
 </tbody></table>
