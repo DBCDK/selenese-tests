@@ -45,7 +45,7 @@ Dokumentation af selenese-formatet (hhl spurgte efter dette): http://release.sel
     - Vend tilbage til "Git GUI", og `Clone Existing Repository`, med den kopierede url som source repository, og target directory som stedet hvor det skal placeres
 - Selenium-IDE
     - Installer/åbn *Firefox*
-    - Åben http://release.seleniumhq.org/selenium-ide/1.5.0/selenium-ide-1.5.0.xpi i browseren, og sig ja til at installation. Dette installere Selenium-IDE i browseren.
+    - Åben http://release.seleniumhq.org/selenium-ide/2.2.0/selenium-ide-2.2.0.xpi i browseren, og sig ja til at installation. Dette installere Selenium-IDE i browseren.
     - Selenium-IDE kan herefter startes fra Tools-menuen i firefox.
     - Eksperimenter med at optage grænsefladeinteraktioner, husk at gem hver enkelt test
     - Gem til sidst hele suiten
