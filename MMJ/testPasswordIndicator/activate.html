@@ -38,7 +38,7 @@
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
-	<td>Klik på Log ind for at logge ind på bibliotek.dk og vælge et kodeord.</td>
+	<td>Click on this button to log in to the site and change your password.</td>
 	<td></td>
 </tr>
 <tr>
@@ -48,7 +48,12 @@
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
-	<td>Du har nu brugt dit en-gangs-login og kan ikke længere logge ind med dette link. Opret et nyt kodeord her.</td>
+	<td>You have just used your one-time login link, and have been assigned a temporary account. Change your password to retain a permanent login. If you do not change your password your login will not be valid</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.password-strength</td>
 	<td></td>
 </tr>
 <tr>
@@ -57,9 +62,19 @@
 	<td>${userpass1}</td>
 </tr>
 <tr>
+	<td>assertTextPresent</td>
+	<td>Weak</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>id=edit-pass-pass2</td>
 	<td>${userpass1}</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>name=language</td>
+	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -72,23 +87,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertTitle</td>
-	<td>Information | bibliotek.dk</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForText</td>
-	<td>link=Log ud</td>
-	<td>Log ud</td>
+	<td>link=Log out</td>
+	<td>Log out</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Log ud</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTitle</td>
-	<td>Information | bibliotek.dk</td>
+	<td>link=Log out</td>
 	<td></td>
 </tr>
 </tbody></table>
