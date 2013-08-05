@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://dringo.dbc.dk/" />
-<title>NewUserPart1</title>
+<title>NewUserPart2</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">NewUserPart1</td></tr>
+<tr><td rowspan="1" colspan="3">NewUserPart2</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -32,23 +32,28 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>link=Opret ny bruger</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTitle</td>
-	<td>Opret ny bruger | bibliotek.dk</td>
-	<td></td>
+	<td>type</td>
+	<td>id=edit-name</td>
+	<td>${userid1}</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=edit-mail</td>
-	<td>${userid1}</td>
+	<td>id=edit-pass</td>
+	<td>${userpass1}</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>bibliotek.dk | bibliotek.dk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log ud</td>
 	<td></td>
 </tr>
 <tr>
