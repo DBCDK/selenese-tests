@@ -3,28 +3,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://bibliotek.dk" />
-<title>bibdk_login_logind</title>
+<link rel="selenium.base" href="http://dringo.dbc.dk/" />
+<title>bibdk_facetter_hits</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">bibdk_login_logind</td></tr>
+<tr><td rowspan="1" colspan="3">bibdk_facetter_hits</td></tr>
 </thead><tbody>
 <tr>
+	<td>open</td>
+	<td>/content/</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
-	<td>link=Log ind</td>
+	<td>css=img[alt=&quot;Bibliotek.dk - loan of books, music, and films&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=edit-name</td>
-	<td>user2-bibdk@guesstimate.dbc.dk</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=edit-pass</td>
-	<td>content</td>
+	<td>id=edit-search-block-form--2</td>
+	<td>kongemordet holst</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -33,9 +33,10 @@
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>Log ud</td>
+	<td>(2 hits)</td>
 	<td></td>
 </tr>
+
 </tbody></table>
 </body>
 </html>
