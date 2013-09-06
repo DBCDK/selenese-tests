@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dringo.dbc.dk/" />
+<title>activate</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">activate</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${activationurl}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mail_to</td>
+	<td>${userid1}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=checkformail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=activate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Click on this button to log in to the site and change your password.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>You have just used your one-time login link, and have been assigned a temporary account. Change your password to retain a permanent login. If you do not change your password your login will not be valid</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.password-strength</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-pass-pass1</td>
+	<td>${userpass1}</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Weak</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-pass-pass2</td>
+	<td>${userpass1}</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>name=language</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img[alt=&quot;Bibliotek.dk - loan of books, music, and films&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Log out</td>
+	<td>Log out</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log out</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

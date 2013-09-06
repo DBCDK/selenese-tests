@@ -12,9 +12,24 @@
 <tr><td rowspan="1" colspan="3">bibdk_sogesider_artikler_mat</td></tr>
 </thead><tbody>
 <tr>
+	<td>setSpeed</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>id=edit-artikler</td>
 	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.fieldset-legend</td>
+	<td>Tidsskrift eller avis</td>
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
@@ -54,6 +69,11 @@
 <tr>
 	<td>verifyTextPresent</td>
 	<td>Udgivelsesår</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
 	<td></td>
 </tr>
 </tbody></table>
