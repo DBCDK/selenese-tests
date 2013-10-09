@@ -11,7 +11,6 @@
 <tr><td><a href="../setVars.html">setVars</a></td></tr>
 <tr><td><a href="ensureWereLoggedOut.html">ensureWereLoggedOut</a></td></tr>
 <tr><td><a href="testOrderAnyEditionBtn.html">testOrderAnyEditionBtn</a></td></tr>
-<tr><td><a href="testCheckmarkPresenceAfterPageLoad.html">testCheckmarkPresenceAfterPageLoad</a></td></tr>
 <tr><td><a href="../restartBrowser.html">restartBrowser</a></td></tr>
 </tbody></table>
 </body>
