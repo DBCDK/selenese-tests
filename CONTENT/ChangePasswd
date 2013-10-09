@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>${baseurl}</td>
+	<td>${baseurl}/user/logout</td>
 	<td></td>
 </tr>
 <tr>
@@ -55,22 +55,27 @@
 <tr>
 	<td>type</td>
 	<td>id=edit-pass-pass2</td>
-	<td> </td>
+	<td>${newUser3Pass}</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=edit-pass-pass1</td>
-	<td>${userpass1newpass}</td>
+	<td>${newUser3Pass}</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=edit-pass-pass2</td>
-	<td>${userpass1newpass}</td>
+	<td>${newUser3Pass}</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=edit-pass-pass1</td>
-	<td>${userpass1newpass}</td>
+	<td>${newUser3Pass}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-search-block-form--2</td>
+	<td>${newUser3Pass}</td>
 </tr>
 <tr>
 	<td>assertTextPresent</td>
