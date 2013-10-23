@@ -3,3 +3,4 @@ bibdk_sogesider.suite
 createSeleniumUser.suite
 bibdk_dansk_forsideknapper.suite
 testOrderAnyEditionBtn/testOrderAnyEditionBtn.suite
+Facetter.suite
