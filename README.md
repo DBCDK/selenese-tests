@@ -34,18 +34,18 @@ Dokumentation af selenese-formatet (hhl spurgte efter dette): http://release.sel
 # Intro/noter
 
 - Git opsætning
+    - Bliv tilføjet med skriverettigheder til organisationen DBCDK på github - hiv fat i en på listen over organisation members.
     - Download from http://code.google.com/p/msysgit/
     - Install
     - start "Git GUI" from start menu
     - `Help` -> `Show SSH Key` -> `Generate Key` og `Copy to Clipboard`
     - Åbn github.com i webbrowser, opret bruger og log ind
     - `Edit Your Profile` -> `SSH Public Keys` -> `Add another public key` -> paste / sæt nøglen ind, der blev kopieret fra Git GUI
-    - Bliv tilføjet med skriverettigheder til organisationen DBC-as på github - hiv fat i Rasmus, eller en af de andre på listen over organisation members.
-    - Find repositoriet `DBC-as/selenese-tests`, og klik på "HTTP", og kopier urlen (`https://` dit_bruger_navn `@github.com/DBC-as/selenese-tests.git`) til clipboard med knap til højre for urlen.
+    - Find repositoriet `DBCDK/selenese-tests`, og kopier urlen (`git@github.com:DBCDK/selenese-tests.git`) til clipboard med knap til højre for urlen.
     - Vend tilbage til "Git GUI", og `Clone Existing Repository`, med den kopierede url som source repository, og target directory som stedet hvor det skal placeres
 - Selenium-IDE
     - Installer/åbn *Firefox*
-    - Åben http://release.seleniumhq.org/selenium-ide/2.2.0/selenium-ide-2.2.0.xpi i browseren, og sig ja til at installation. Dette installere Selenium-IDE i browseren.
+    - Find seneste version på siden http://docs.seleniumhq.org/download/ (fx http://release.seleniumhq.org/selenium-ide/2.5.0/selenium-ide-2.5.0.xpi), åbn i browseren, og sig ja til at installere. Dette installerer Selenium-IDE i browseren.
     - Selenium-IDE kan herefter startes fra Tools-menuen i firefox.
     - Eksperimenter med at optage grænsefladeinteraktioner, husk at gem hver enkelt test
     - Gem til sidst hele suiten
