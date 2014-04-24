@@ -42,7 +42,7 @@ Dokumentation af selenese-formatet (hhl spurgte efter dette): http://release.sel
     - Åbn github.com i webbrowser, opret bruger og log ind
     - `Edit Your Profile` -> `SSH Public Keys` -> `Add another public key` -> paste / sæt nøglen ind, der blev kopieret fra Git GUI
     - Find repositoriet `DBCDK/selenese-tests`, og kopier urlen (`git@github.com:DBCDK/selenese-tests.git`) til clipboard med knap til højre for urlen.
-    - Vend tilbage til "Git GUI", og `Clone Existing Repository`, med den kopierede url som source repository, og target directory som stedet hvor det skal placeres
+    - Vend tilbage til "Git GUI", og `Clone Existing Repository`, med den kopierede url som source repository, og target directory som stedet hvor det skal placeres. OBS: target directory mappe må ikke allerede eksistere, men bliver oprettet af "Git GUI".
 - Selenium-IDE
     - Installer/åbn *Firefox*
     - Find seneste version på siden http://docs.seleniumhq.org/download/ (fx http://release.seleniumhq.org/selenium-ide/2.5.0/selenium-ide-2.5.0.xpi), åbn i browseren, og sig ja til at installere. Dette installerer Selenium-IDE i browseren.
